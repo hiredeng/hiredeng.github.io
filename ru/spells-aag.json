@@ -1,0 +1,82 @@
+{
+  "spell": [
+    {
+      "name": "Воздушный пузырь (Air bubble)",
+      "source": "AAG",
+      "page": 22,
+      "level": 2,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 60
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 24
+          }
+        }
+      ],
+      "entries": [
+        "Вы создаёте призрачную сферу вокруг головы согласного существа, которого вы можете видеть в пределах дистанции. Сфера наполнена свежим воздухом, существующим, пока заклинание активно.\n\nЕсли у существа больше одной головы, сфера воздуха возникает вокруг только одной из голов (существу будет этого достаточно, чтобы избежать удушья, если предположить, что все его головы имеют одну и ту же дыхательную систему).\n\n"
+      ],
+      "entriesHigherLevel": [
+        "Если вы накладываете это заклинание, используя ячейку 3-го уровня или выше, вы можете создать две дополнительные сферы свежего воздуха за каждый уровень ячейки выше второго."
+      ],
+      "miscTags": [
+        "SGT"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Create Spelljamming Helm",
+      "source": "AAG",
+      "page": 22,
+      "level": 5,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": {
+          "text": "a crystal rod worth at least 5,000 gp, which the spell consumes",
+          "cost": 500000,
+          "consume": true
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "Holding the rod used in the casting of the spell, you touch a Large or smaller chair that is unoccupied. The rod disappears, and the chair is transformed into a {@item spelljamming helm|AAG}."
+      ]
+    }
+  ]
+}
